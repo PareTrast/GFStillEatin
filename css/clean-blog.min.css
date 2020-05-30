@@ -14,3 +14,94 @@
  .post-subtitle > a:hover {
     color:wheat;
  }
+ 
+ img{
+   max-width:50vmax;
+   max-height: auto;
+ }
+
+ #pbites{
+   display:flex;
+   flex-direction:row;
+   justify-content: space-between;
+   align-items:flex-start;
+   }
+   
+
+  #homeimg{
+    displaY:flex;
+    flex-grow: 1;
+    flex-shrink:1;
+    max-width:50vmax;
+    max-height:auto;
+    /*flex: 1 1 150px;(first number is grow, second is shrink, last number is basis aka starting size)*/
+    /*order: (items usually go in order of HTML, use this to switch it up. ie img 2nd and para 1st)*/
+  }
+
+
+  .homepara{
+    display:flex;
+    flex-grow: 1;
+    flex-shrink:1;
+    flex-wrap:nowrap;
+    max-height: auto;
+    max-width:50vmax;
+    margin-left: 15px;
+    }
+
+  
+  
+ #whatisgluten {
+  display: block;
+  padding: 20px;
+  background-image: url('img/gluten.jpg');
+
+}
+ .postimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+  #pbites{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    }
+    
+ 
+   #homeimg{
+     /*float:left;
+     alignment :right;
+     margin:auto;
+     display:inline-block
+     width: 75%;
+     height: 75%;*/
+     displaY:flex;
+     max-width:50vmax;
+     max-height:auto;
+   }
+ 
+ 
+   .homepara{
+     /*display:inline-block;
+     float: right;
+     position:absolute;
+     right:320px;
+     word-wrap: normal;*/
+     display:flex;
+     
+   }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
